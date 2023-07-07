@@ -11,11 +11,12 @@ terraform {
       version = "~> 5.4"
     }
   }
-
-  backend "s3" {
+ backend "s3" {
     bucket  = "ziyotek-terraform-state-rady-host"
     key     = "ec2-examle/devops/terraform.tfstate"
     region  = "us-east-1"
     encrypt = true
   }
+}
+ 
 }
